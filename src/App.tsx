@@ -5,6 +5,7 @@ import HowItWorks from "./components/HowItWorks"
 import WhyUs from "./components/WhyUs"
 import CTA from "./components/CTA"
 import Footer from "./components/Footer"
+import ImageContainer from "./components/ImageContainer"
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Header />
       <Hero />
       <Programs />
+      <ImageContainer/>
       <HowItWorks />
       <WhyUs />
       <CTA />
