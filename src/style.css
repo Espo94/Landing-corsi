@@ -151,6 +151,46 @@ body{
   box-shadow:0 28px 70px rgba(0,0,0,0.2);
 }
 
+/* STEPS */
+.steps{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap:20px;
+}
+.step{
+  background:white;
+  padding:22px;
+  border-radius:18px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+.step-number{
+  font-weight:800;
+  font-size:18px;
+  color: var(--primary-dark);
+  margin-bottom:10px;
+}
+
+/* FEATURES */
+.features{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:18px;
+}
+.feature{
+  background:white;
+  padding:18px;
+  border-radius:16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  font-weight:600;
+}
+.feature span{
+  color: var(--primary);
+  font-size:18px;
+}
+
 /* CTA */
 .cta{
   background:
