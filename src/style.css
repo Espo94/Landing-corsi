@@ -154,3 +154,59 @@ footer {
   color: #d1d5db;
   font-size: 14px;
 }
+
+/* IMMAGINE */
+.image-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* HOVER */
+.hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* FORM */
+.form {
+  max-width: 500px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form input,
+.form textarea {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+/* ANIMAZIONI */
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
