@@ -17,7 +17,8 @@ export default function Programs() {
   return (
     <section id="programs" className="section">
       <h2>Programmi disponibili</h2>
-        "Sosteniamo la tua formazione per chi usufruisce dei percorsi:"
+      <div className="p-2">"Sosteniamo la tua formazione per chi usufruisce dei percorsi:" 
+        </div>  
 
       <div className="cards">
         {programs.map((p) => (
