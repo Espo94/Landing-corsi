@@ -1,0 +1,36 @@
+export default function App() {
+  return (
+    <>
+      <section className="hero">
+        <h1>Impara le competenze che servono davvero</h1>
+        <p>Corsi pratici online pensati per il mondo del lavoro</p>
+        <button>Scopri i corsi</button>
+      </section>
+
+      <section className="features">
+        <h2>Perché sceglierci</h2>
+        <div className="grid">
+          <div>📚 Contenuti pratici</div>
+          <div>👨‍🏫 Docenti esperti</div>
+          <div>🎯 Orientati al lavoro</div>
+        </div>
+      </section>
+
+      <section className="courses">
+        <h2>I nostri corsi</h2>
+        <div className="card">
+          <h3>React da Zero</h3>
+          <p>Frontend moderno con React</p>
+        </div>
+        <div className="card">
+          <h3>Web Full Stack</h3>
+          <p>Frontend + Backend per il lavoro reale</p>
+        </div>
+      </section>
+
+      <footer>
+        ©️ 2026 – Formazione Online
+      </footer>
+    </>
+  )
+}
