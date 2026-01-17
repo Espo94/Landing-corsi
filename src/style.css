@@ -17,6 +17,19 @@ body {
   background: white;
 }
 
+/* HEADER */
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #4f46e5, #6366f1);

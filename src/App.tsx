@@ -1,10 +1,18 @@
 export default function App() {
   return (
     <>
+      {/* HEADER con LOGO */}
+      <header className="header">
+        <img
+          className="logo"
+          src="/logo.png"
+          alt="Associazione C.E.I.O"
+        />
+      </header>
+
       {/* HERO */}
       <section className="hero fade-in">
         <div className="hero-content">
-          <span className="badge">Ente riconosciuto Regione Calabria</span>
           <h1>Costruisci il tuo futuro professionale</h1>
           <p>
             Formazione pensata per accompagnarti nella crescita personale
@@ -13,10 +21,10 @@ export default function App() {
           <button
             className="cta-primary"
             onClick={() =>
-              document.getElementById('contatti')?.scrollIntoView({ behavior: 'smooth' })
+              window.location.href = "mailto:associazioneceio@libero.it"
             }
           >
-            Richiedi informazioni
+            Contattaci via email
           </button>
         </div>
       </section>
@@ -33,9 +41,8 @@ export default function App() {
       <section className="section fade-in">
         <h2>Chi siamo</h2>
         <p className="section-text">
-          <strong>Associazione C.E.I.O</strong> è un ente di formazione riconosciuto
-          dalla Regione Calabria. Offriamo percorsi formativi accessibili,
-          concreti e orientati allo sviluppo delle competenze.
+          <strong>Associazione C.E.I.O</strong> è un’associazione che offre percorsi formativi
+          concreti, orientati allo sviluppo delle competenze e alla crescita professionale.
         </p>
 
         <div className="info-grid">
@@ -70,36 +77,19 @@ export default function App() {
       <section className="cta fade-in">
         <h2>Inizia oggi il tuo percorso</h2>
         <p>Contattaci e scopri quale programma è più adatto a te</p>
-      </section>
-
-      {/* FORM */}
-      <section id="contatti" className="section fade-in">
-        <h2>Contattaci</h2>
-
-        <form
-          className="form"
-          action="mailto:info@associazioneceio.it"
-          method="post"
-          encType="text/plain"
+        <button
+          className="cta-primary"
+          onClick={() =>
+            window.location.href = "mailto:associazioneceio@libero.it"
+          }
         >
-          <input type="text" name="Nome" placeholder="Nome e Cognome" required />
-          <input type="email" name="Email" placeholder="Email" required />
-          <textarea
-            name="Messaggio"
-            placeholder="Scrivi qui la tua richiesta"
-            rows={5}
-            required
-          />
-          <button type="submit" className="cta-primary">
-            Invia richiesta
-          </button>
-        </form>
+          Scrivi a associazioneceio@libero.it
+        </button>
       </section>
 
       {/* FOOTER */}
       <footer>
         <strong>Associazione C.E.I.O</strong><br />
-        Ente di formazione riconosciuto dalla Regione Calabria<br />
         Via Brutium 16 – Catanzaro (CZ) 88100<br />
         P. IVA 04039860798
       </footer>
